@@ -255,35 +255,3 @@ public class CardDemo {
         return 0;
     }
 }
-
-
-//根据牌型，花色以及点数来给出得分，以便于比较
-//    public static double getScore(int typeOfPlayer,
-//                               int[] RankOfPlayer, int[] SuitOfPlayer) {
-//        double value = 100000000;//每两位数存放一个牌的分数
-//
-//        double score = typeOfPlayer * value;//牌型得分
-//        value /= 100;
-//        //点数加分
-//        //每两位数存放一个牌的rank分数，可进位
-//        for (int i = 14; i >= 2; i--) {
-//            while (RankOfPlayer[i] > 0) {
-//                score += i * value;
-//                --RankOfPlayer[i];
-//                if (RankOfPlayer[i] == 0) {
-//                    value /= 100;
-//                }
-//            }
-//        }
-//        //花色加分
-//        //每一位存放一个牌的suit分数，可进位
-//        for (int i = 4; i <= 1; i--) {
-//            while (SuitOfPlayer[i] > 0) {
-//                score += i * value;
-//                --SuitOfPlayer[i];
-//                if (SuitOfPlayer[i] == 0) {
-//                    value /= 10;
-//                }
-//            }
-//        }
-//        return score;
